@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+   
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet"> <!-- Vinculando o CSS externo -->
+    <title>Colorê Desapego</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <header>
+        <img src="logo.svg" alt="Logo do meu site" class="logo">
+        
+        <nav class="social">
+            <a href="https://www.instagram.com/loja_colore1" target="_blank">
+                <img src="instagram.png" alt=Instagram/>                                                                      
+            </a>
+    
+            <a href="https://www.facebook.com/profile.php?id=61567248481163&mibextid=LQQJ4d" target="_blank">
+                <img src="facebook.png" alt="facebook"/>        
+            </a>
+
+            <a href="https://wa.me/5547997378205" target="_blank">
+                <img src="whatsapp.png" alt="whatsapp"/>        
+            </a>
+        </nav>
+
+    </header> <!-- cabeçalho -->
+
+    <main>
+        <section class="left-column">
+            <h2>Sobre</h2>
+            <p>Na Desapego Colore, acreditamos que a moda tem o poder de transformar – não apenas visualmente, mas também como uma escolha sustentável e consciente. Nosso espaço nasceu da paixão pelo consumo responsável e do desejo de dar novas histórias a peças que, de outra forma, ficariam paradas no armário. Valorizamos a criatividade e a singularidade de cada item, cuidando de cada detalhe para oferecer peças selecionadas com carinho, para que elas tenham um novo começo ao seu lado. Somos mais do que uma loja de desapegos; somos um ponto de encontro entre quem ama moda e quem quer fazer a diferença.</p>
+
+            <h2>Missão</h2>
+            <p>Nossa missão é promover o consumo consciente e acessível, incentivando um estilo de vida que valorize a sustentabilidade e o reaproveitamento. Buscamos conectar pessoas através de peças que contam histórias, inspirando uma nova forma de pensar e consumir moda.</p>
+
+            <h2>Valores</h2>
+            <h3>Sustentabilidade</h3>
+            <p>Acreditamos em um mundo onde cada peça tem valor e merece uma nova chance.</p>
+            <h3>Respeito e Transparência</h3>
+            <p>Respeito e Transparência – Prezamos pela clareza e ética em todas as etapas da coleta ao atendimento.</p>
+            <h3>Qualidade e Cuidado</h3>
+            <p>Selecionamos e cuidamos de cada peça para garantir que você receba produtos em excelente estado, prontos para um novo começo.</p>
+            
+
+            <h2>Diferencial</h2>
+            <p>Nosso diferencial é o cuidado e a curaria que dedicamos a cada peça. Com um processo minucioso de seleção e higienização, garantimos que cada item da Desapego Colore esteja em perfeitas condições, pronto para trazer alegria e estilo para sua guarda-roupa. Além disso, consideramos que a experiência do cliente é fundamental, por isso oferecemos atendimento personalizado, suporte para escolher as peças ideais e um espaço acolhedor, seja em nossa loja física ou online.</p>
+            
+            <h2>Contato</h2>
+            <p>Telefone: (47) 99737-8205</p>
+            <p>Email: adm@lojacolore.com.br</p>
+            <p>Endereço: Rua Antônio Coradin 157, Centro, Bituruna-PR</p>          
+
+
+        </section>
+    
+        <!-- Coluna Direita - Carrossel de Imagens -->
+        <section class="right-column">            
+            <div class="carousel">
+                <img src="image1.png" alt="Imagem 1" class="active">
+                <img src="Image2.png" alt="Imagem 2">
+                <img src="image3.png" alt="Imagem 3">
+                <!-- Adicione mais imagens conforme necessário -->
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // JavaScript simples para o carrossel
+        let currentImageIndex = 0;
+        const images = document.querySelectorAll('.carousel img');
+        const totalImages = images.length;
+    
+        setInterval(() => {
+            images[currentImageIndex].classList.remove('active');
+            currentImageIndex = (currentImageIndex + 1) % totalImages;
+            images[currentImageIndex].classList.add('active');
+        }, 2000); // Troca de imagem a cada 3 segundos
+    </script>  
+
+    <footer>
+        <p>&copy; 2024 Colorê desapego kids</p>
+    </footer>
+</body>
+</html>
