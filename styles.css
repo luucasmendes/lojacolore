@@ -82,20 +82,40 @@ footer{
     box-sizing: border-box;
 }
 
-@media all and (max-width: 900px) {
-    
-    header{
-        font-size: 100%;        
-    }
-    /* coluna da esquerda*/
-    main{
-        width: 100%;
-        padding-right: 0px;        
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        text-align: center;
     }
 
-    main{
-        width: 100%;
-        padding-right: 0px;        
-    }   
-    
+    /* Ajuste de tamanhos e margens para tablets */
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Ajusta o tamanho do texto, imagens e contêineres */
+    body {
+        font-size: 0.9em;
+    }
 }
+
+/* Layout responsivo para smartphones (largura máxima de 480px) */
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    /* Reduz o tamanho do texto e melhora o espaçamento em telas menores */
+    body {
+        font-size: 0.8em;
+    }
+
+    /* Ajuste de imagens e elementos */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
