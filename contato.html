@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em contato</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->    
+    <link rel="icon" href="logotipo.svg" type="image/svg+xml">    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="logotipo.svg" alt="Logo Colorê Moda Kids" class="logo">
+            <nav>
+                <ul><li><a href="index.html">SOBRE</a></li>                    
+                    <li><a href="promocoes.html">PROMOÇÕES</a></li>                    
+                    <li><a href="eventos.html">EVENTOS</a></li>                    
+                    <li><a href="contato.html">CONTATO</a></li>
+                    <li><a href="https://coloremodakids.blogspot.com">BLOG</a></li>            
+                </ul>
+            </nav>
+        </div>        
+    </header>
+    <main>
+
+        <section id="contato">
+            <div class="form-container">
+                <h2>Entre em Contato</h2>
+                <form id="whatsappForm">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input type="text" id="nome" name="nome" required>
+        
+                    <label for="mensagem"><strong>Mensagem:</strong></label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+        
+                    <button type="button" onclick="enviarWhatsApp()">Enviar pelo WhatsApp</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="follow-section">
+            <!-- Grupo VIP no WhatsApp -->
+            <div class="follow-content whatsapp">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="follow-logo">
+                <p>Entre no nosso Grupo VIP e receba promoções exclusivas!</p><br>
+                <a href="https://chat.whatsapp.com/B7aidVFjbBK2XhYDES5qjZ" target="_blank" class="follow-button">Entrar no Grupo</a>
+            </div>
+        
+            <!-- Seguir no Instagram -->
+            <div class="follow-content instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="follow-logo">
+                <p>Siga nossa página no Instagram e fique por dentro das novidades!</p>
+                <a href="https://www.instagram.com/loja_colore1" target="_blank" class="follow-button">Seguir no Instagram</a>
+            </div>
+        
+            <!-- Seguir no Facebook -->
+            <div class="follow-content facebook">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook" class="follow-logo">
+                <p>Curta nossa página no Facebook e acompanhe nossas promoções!</p>
+                <a href="https://www.facebook.com/share/1EwKLduvUc/?mibextid=wwXIfr" target="_blank" class="follow-button">Curtir no Facebook</a>
+            </div>
+        </div>
+               
+                
+
+        <section id="localizacao">
+            <h2>COMO CHEGAR?</h2>
+            <p>Encontre a Colorê no mapa abaixo:</p><br>
+            <!-- Incorpore o Google Maps aqui -->
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.1347359554966!2d-51.555291799999985!3d-26.159741099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e5c5c0e57326bd%3A0x2e71a63c15835003!2sColor%C3%AA%20Moda%20kids%20-%20Bituruna!5e0!3m2!1spt-BR!2sbr!4v1738268420337!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>            
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 COLORÊ MODA KIDS | Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Chamando o script externo -->
+    <script src="script.js"></script>
+</body>
+</html>

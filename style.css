@@ -1,0 +1,417 @@
+/* Importando a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aplicando a fonte em todo o site */
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+}
+
+/* HEADER COM EFEITOS INTERATIVOS */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;    
+    z-index: 1000;
+    box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-bottom: 4px solid transparent;
+}
+
+main {
+    margin-top: 80px; 
+    padding: 120px;
+    text-justify: auto;
+}
+
+/* Centralizando o Header */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilizando a Logo */
+.logo {
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Estilizando a Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #fd8ee6;
+    font-weight: 700;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background-color: #fd8ee6;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Seção hero */
+.hero {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 80px auto;
+}
+
+section {
+    padding: 20px;
+}
+
+#localizacao {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#cta {
+    text-align: center;
+}
+
+/* Estilo do link com gradiente */
+.instagram-link {
+    background: linear-gradient(45deg, #F58529, #D6249F, #8a3ab9, #FCAF45);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.instagram-link:hover {
+    color: #301ce0;
+    text-decoration: dashed;
+}
+
+.mapa-container iframe {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #1ebe57; /* Efeito hover */
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Quando o campo de entrada for focado, mudar a cor do container */
+input:focus, textarea:focus {
+    outline: none; /* Remove o contorno padrão */
+    border-color: #25D366; /* Cor do contorno quando o campo é focado */
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    background-color: #f1fdf2; /* Cor do fundo do campo ao ser preenchido */
+}
+
+/* Opcional: se quiser que o container todo mude de cor */
+.form-container.focused {
+    background-color: #ffaefb; /* Cor do container quando qualquer campo for focado */
+}
+
+.form-container {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    border: 1px solid #ccc; /* Borda fina */
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px; /* Tamanho máximo para o formulário */
+    width: 100%;
+    margin: 20px auto; /* Centraliza o conteúdo */
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px; /* Altura maior para a área de texto */
+}
+
+.follow-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.follow-content {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.follow-content:hover {
+    transform: scale(1.05);
+}
+
+/* Logo dos aplicativos */
+.follow-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Botões de ação */
+.follow-button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+/* WhatsApp - Verde */
+.whatsapp .follow-button {
+    background: #25D366;
+    color: white;
+}
+
+.whatsapp .follow-button:hover {
+    background: #1EBE57;
+}
+
+/* Instagram - Roxo degrade */
+.instagram .follow-button {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+}
+
+.instagram .follow-button:hover {
+    background: linear-gradient(45deg, #e6683c, #dc2743, #cc2366, #bc1888, #8a1b6b);
+}
+
+/* Facebook - Azul */
+.facebook .follow-button {
+    background: #1877F2;
+    color: white;
+}
+
+.facebook .follow-button:hover {
+    background: #0d65d9;
+}
+
+.event-section {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f9f9f9;
+}
+
+.event-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.event-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.event-card:hover {
+    transform: scale(1.05);
+}
+
+.event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 15px;
+}
+
+.event-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.event-button {
+    display: inline-block;
+    text-decoration: none;
+    background: #1877F2;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.event-button:hover {
+    background: #0d65d9;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: rgb(44, 44, 44);
+    margin-top: 40px;
+}
+
+/* Responsividade para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    /* Ajustando o espaçamento do conteúdo principal */
+    main {
+        margin: 30px auto; /* Menos espaço no topo para não esconder conteúdo */
+        padding: 10px; /* Reduzindo o padding lateral */
+        max-width: 100%; /* Ocupa toda a largura disponível */
+        text-align: left; /* Melhor alinhamento */
+        line-height: 1.6; /* Melhorando a legibilidade */
+    }
+
+    .container {
+        flex-direction: column; /* Empilha os itens em coluna */
+        align-items: center; /* Centraliza os itens */
+        gap: 15px; /* Espaço entre a logo e a navegação */
+        padding: 20px;
+    }
+
+    /* Ajustando a seção hero */
+    .hero {
+        padding:10px;
+        margin: 60px 15px;
+        max-width: 100%;
+    }
+
+    header {
+        position: relative;        
+    }
+
+    /* Deixando o menu mais acessível em telas menores */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 15px;
+    }
+
+    /* Reduzindo o tamanho da logo */
+    .logo {
+        height: 40px;
+    }
+
+    /* Ajustando o tamanho do mapa */
+    .mapa-container iframe {
+        width: 100%;
+        height: 250px;
+    }
+}
